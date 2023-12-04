@@ -2,9 +2,9 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "../features/Home"; // Create this component
-import Messages from "../features/Messages"; // Create this component
-import Calls from "../features/Calls"; // Create this component
+import Home from "../features/Home";
+import Messages from "../features/Messages";
+import Calls from "../features/Calls";
 
 function App() {
   return (
