@@ -1,22 +1,35 @@
-// communication-app-frontend/src/components/features/Home.js
+import React from "react";
+import { Header } from "./Header";
 
-export function Header({ showForm, setShowForm }) {
-  const appTitle = "Comms";
-
+function Home() {
   return (
-    <header className="header">
-      <div className="logo">
-        <img src="BuntuLabs-03.jpg" height="68" width="68" alt="Buntu Labs" />
-        <h1>{appTitle}</h1>
+    <div className="home-container">
+      {/* Header */}
+      <Header />
+
+      {/* Message and Calls Columns */}
+      <div className="columns-container">
+        <div className="messages-column">
+          {/* Placeholder for Messages */}
+          <h3>Messages</h3>
+          {/* Display messages here */}
+        </div>
+        <div className="calls-column">
+          {/* Placeholder for Calls */}
+          <h3>Calls</h3>
+          {/* Display calls here */}
+        </div>
       </div>
 
-      <button
-        className="btn btn-large btn-open"
-        onClick={() => setShowForm((show) => !show)}
+      {/* Floating Button for New Chat */}
+      <div
+        className="new-chat-button"
+        onClick={() => console.log("New Chat clicked")}
       >
-        {showForm ? "Start Chat" : "Search Chats"}
-      </button>
-    </header>
+        +
+      </div>
+    </div>
   );
 }
+
 export default Home;

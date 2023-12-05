@@ -1,5 +1,3 @@
-// communication-app-frontend/src/components/features/Calls.js
-
 import React, { useState } from "react";
 
 function Calls() {
@@ -14,11 +12,15 @@ function Calls() {
   const handleStartCall = () => {
     // Logic to start the call
     setCallState("ongoing");
+    // Add additional logic for initiating a call
+    console.log(`Call started. Type: ${callType}`);
   };
 
   const handleEndCall = () => {
     // Logic to end the call
     setCallState("ended");
+    // Add additional logic for ending a call
+    console.log("Call ended");
   };
 
   return (
